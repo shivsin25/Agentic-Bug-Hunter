@@ -71,7 +71,6 @@ This repo is a Claude Code plugin for professional bug bounty hunting across Hac
 | `/dashboard` | `/dashboard [--port 8777] \| --export dashboard.html` — local web Hunt Dashboard: leads, recon surface, findings, reports, galleries, memory flywheel, in one live view |
 | `/verify` | `/verify check <bundle-dir> [--marker "signal"] \| sweep [root]` — report gate: independently re-derives a finding from its PoC bundle; PROVEN → reportable, REFUTED/UNPROVEN/INCONCLUSIVE → suppressed; writes verification.json; `--require-proof` gates CI |
 | `/bench` | `/bench run [--min-precision 1.0 --max-fp-rate 0.0] \| list` — BugBench: measure detector precision/recall/false-positive rate vs a ground-truth corpus (known-vuln + known-safe); `--min-precision`/`--max-fp-rate` gate CI against quality regressions |
->>>>>>> 184a3ac (feat(bench): BugBench — detection-quality benchmark + CI gate (/bench))
 
 ### Agents (9 specialized agents)
 
